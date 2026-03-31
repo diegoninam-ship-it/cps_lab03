@@ -14,6 +14,10 @@ public class StudentController {
         studentService.registrarEstudiante(codigo, nombre, edad);
     }
 
+    public void procesar() {
+        System.out.println("Procesando estudiante");
+    }
+
     public void buscar(String codigo) {
         studentService.buscarEstudiante(codigo);
     }
