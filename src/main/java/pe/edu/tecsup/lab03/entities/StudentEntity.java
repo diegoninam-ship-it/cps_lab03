@@ -2,15 +2,25 @@ package pe.edu.tecsup.lab03.entities;
 
 public class StudentEntity {
 
+    private String codigo;
     private String nombre;
     private int edad;
 
     public StudentEntity() {
     }
 
-    public StudentEntity(String nombre, int edad) {
+    public StudentEntity(String codigo, String nombre, int edad) {
+        this.codigo = codigo;
         this.nombre = nombre;
         this.edad = edad;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
     public String getNombre() {
